@@ -1,0 +1,44 @@
+.card img {
+    width: 80%;
+    height: 10rem;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5%;
+    border: 2px solid black
+}
+
+body {
+    background-color: rgb(142, 228, 155);
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.card {
+    background-color: gold;
+    border-radius: 5%;
+    height: 100%;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.row {
+    padding: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
