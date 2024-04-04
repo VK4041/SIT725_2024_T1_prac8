@@ -1,7 +1,7 @@
 {
-  "name": "sit725_2024_t1_prac3",
+  "name": "sit725_2024_t1_prac4",
   "version": "1.0.0",
-  "description": "Bootstrapping Express using Materialize",
+  "description": "Using Databases",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac3.git"
+    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac4.git"
   },
   "author": "VK4041",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VK4041/SIT725_2024_T1_prac3/issues"
+    "url": "https://github.com/VK4041/SIT725_2024_T1_prac4/issues"
   },
-  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac3#readme",
+  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac4#readme",
   "dependencies": {
     "express": "^4.19.2"
   }
