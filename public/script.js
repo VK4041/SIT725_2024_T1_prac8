@@ -1,31 +1,3 @@
-let cardList = [
-    {
-        title: "Melbourne City",
-        image: "./images/melb.png",
-        description: `Food capital of Australia. Filled with beautiful scenaries and a
-        spectacular city with sky-scrapers and wonderful beaches. A must visit in my book!`,
-        // Image sourced from vector stock
-        link: "https://www.vectorstock.com/",
-        linkText: "Visit Melbourne"
-    },
-    {
-        title: "Sydney City",
-        image: "./images/syd.png",
-        description: `The capital of The Australian State of New South Wales. Sydney is popular tourist destination famous for its harbour and Opera House.`,
-        // Image sourced from vector stock
-        link: "https://www.vectorstock.com/",
-        linkText: "Visit Sydney"
-    },
-    {
-        title: "Brisbane City",
-        image: "./images/bris.png",
-        description: `The capital of Queensland is situated on the Brisbane River. Famous for its vast and open parklands, lookouts and local markets.`,
-        // Image sourced from vector stock
-        link: "https://www.vectorstock.com/",
-        linkText: "Visit Brisbane"
-    }
-]
-
 let body = document.body;
 let container = document.createElement('div');
 let cardRow = document.createElement('div');
@@ -53,7 +25,6 @@ function addCards(cards) {
         cardRow.appendChild(div);
     });
 }
-
 
 // Button for modal
 let btnContainer = document.createElement("div");
@@ -83,6 +54,18 @@ body.appendChild(container);
 btnContainer.appendChild(button);
 body.appendChild(btnContainer);
 
-document.addEventListener("DOMContentLoaded", function () {
-    addCards(cardList);
+// document.addEventListener("DOMContentLoaded", function () {
+//     // addCards(cardList);
+//     getCards();
+// });
+
+const getCards = () => {
+    $.get('/api/cities', (response) => {
+        if (response.statusCode == 200) {
+            addCards(response.data);
+        }
+    })
+}
+$(document).ready(function () {
+    getCards();
 });
