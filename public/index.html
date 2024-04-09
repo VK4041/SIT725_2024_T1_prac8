@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <nav class="navbar bg-warning">
         <div class="container-fluid">
             <a href="" class="navbar-brand">
@@ -25,36 +24,27 @@
     <div class="text-center">
         <img src="./images/map.png" alt="australia_map" class="img-fluid img-thumbnail mt-3">
     </div>
-
-    <!-- Card section for all cards -->
-    <!-- Cards will be added dynamically via Script.js -->
-
     <!-- Modal -->
     <div class="modal fade" id="modalForm"">
         <div class=" modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalFormLabel">Submit Your Details</h5>
+                <h5 class="modal-title" id="modalFormLabel">Submit Your City Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter city title">
                     </div>
                     <div class="mb-3">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" required
-                            placeholder="Enter your last name">
+                        <label for="path" class="form-label">Image Path</label>
+                        <input type="text" class="form-control" id="path" placeholder="Enter image path">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        <label for="desc" class="form-label">City Description</label>
+                        <input type="text" class="form-control" id="desc" placeholder="Enter city description">
                     </div>
                 </form>
             </div>

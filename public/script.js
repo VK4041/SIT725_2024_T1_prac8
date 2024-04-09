@@ -14,11 +14,10 @@ function addCards(cards) {
         div.classList.add("col-lg-4", "col-sm-5", "my-2");
         div.innerHTML = `
                 <div class="card text-center">
-                    <img src= "${card.image}" alt="Image${i++}" class="card-img-top">
+                    <img src= "${card.path}" alt="Image${i++}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${card.title}</h5>
                         <p class="card-text lead">${card.description}</p>
-                        <p class="card-text"><a href="${card.link}" target="_blank">${card.linkText}</a></p>
                     </div>
                 </div>
         `;
@@ -36,28 +35,19 @@ button.classList.add("btn", "btn-primary", "text-center");
 button.setAttribute("data-bs-toggle", "modal");
 button.setAttribute("data-bs-target", "#modalForm");
 button.innerHTML = "Click Me";
-
-let submitBtn = document.getElementById("submit");
-submitBtn.addEventListener("click", () => {
+function clicked() {
+    alert('City data posted successfully!');
+}
+function submitForm() {
     let formData = {
-        Firstname: document.getElementById('firstName').value,
-        Lasttname: document.getElementById('lastName').value,
-        Email: document.getElementById('email').value,
-        Password: document.getElementById('password').value
+        title: document.getElementById('title').value,
+        path: document.getElementById('path').value,
+        description: document.getElementById('desc').value,
     };
     console.log("Form Submitted: ", formData);
-});
-
-//Append Everything at the end
-container.appendChild(cardRow);
-body.appendChild(container);
-btnContainer.appendChild(button);
-body.appendChild(btnContainer);
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // addCards(cardList);
-//     getCards();
-// });
+    postCities(formData);
+    clicked();
+};
 
 const getCards = () => {
     $.get('/api/cities', (response) => {
@@ -66,6 +56,18 @@ const getCards = () => {
         }
     })
 }
+const postCities = (formData) => {
+    $.post('/api/cities', formData);
+}
+//Append Everything at the end
+container.appendChild(cardRow);
+body.appendChild(container);
+btnContainer.appendChild(button);
+body.appendChild(btnContainer);
+
 $(document).ready(function () {
+    $("#submit").click(() => {
+        submitForm();
+    });
     getCards();
 });
