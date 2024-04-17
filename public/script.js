@@ -50,14 +50,14 @@ function submitForm() {
 };
 
 const getCards = () => {
-    $.get('/api/cities', (response) => {
+    $.get('/api/projects/cities', (response) => {
         if (response.statusCode == 200) {
             addCards(response.data);
         }
     })
 }
 const postCities = (formData) => {
-    $.post('/api/cities', formData);
+    $.post('/api/projects/cities', formData);
 }
 //Append Everything at the end
 container.appendChild(cardRow);
