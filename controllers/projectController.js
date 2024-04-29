@@ -10,7 +10,7 @@ const getProject = async (req, res) => {
         res.json({
             statusCode: 200,
             data: result,
-            message: "Get all cards success"
+            message: "Get All Cities Success"
         });
     } catch (error) {
         console.error("Error while fetching data:", error);

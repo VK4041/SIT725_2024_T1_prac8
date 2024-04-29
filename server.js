@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 //Import Routes
 const projectRoute = require('./routes/projects');
 
@@ -14,6 +15,6 @@ app.use(express.urlencoded({
 //Use Routes
 app.use('/api/projects', projectRoute);
 
-app.listen(port, async () => {
+app.listen(port, () => {
     console.log("App Listening on port " + port);
 });

@@ -1,24 +1,28 @@
 {
-  "name": "sit725_2024_t1_prac5",
+  "name": "sit725_2024_t1_prac6",
   "version": "1.0.0",
   "description": "Using Databases",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac5.git"
+    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac6.git"
   },
   "author": "VK4041",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VK4041/SIT725_2024_T1_prac5/issues"
+    "url": "https://github.com/VK4041/SIT725_2024_T1_prac6/issues"
   },
-  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac5#readme",
+  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac6#readme",
   "dependencies": {
+    "chai": "^5.1.0",
     "express": "^4.19.2",
-    "mongodb": "^6.5.0"
+    "fix-esm": "^1.0.1",
+    "mocha": "^10.4.0",
+    "mongodb": "^6.5.0",
+    "request": "^2.88.2"
   }
 }
