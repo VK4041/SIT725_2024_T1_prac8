@@ -3,7 +3,6 @@ const { getCollection } = require('../dBConnection');
 async function Retrieve() {
     const collection = await getCollection(); //remove this if error
     const result = await collection.find().toArray();
-    console.log("Fetched Data: ", result);
     return result;
 }
 
@@ -16,7 +15,6 @@ async function Create(formData) {
         description: formData.description
     };
     const result = await collection.insertOne(city);
-    console.log("Posted Data: ", result);
 }
 
 module.exports = {

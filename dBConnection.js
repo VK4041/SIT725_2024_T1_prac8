@@ -16,7 +16,8 @@ async function runDBConnection() {
         // Connect the client to the server (optional starting in v4.7)
         await client.connect();
         collection = client.db('City_Database').collection('Cities');
-        console.log(collection);
+        // The line below displays coloured details -> Collection and MongoDB details in the console
+        // console.log(collection);
     } catch (ex) {
         console.error("Error found at MongoDB connection: " + ex);
     }

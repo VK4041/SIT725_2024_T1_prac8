@@ -1,7 +1,7 @@
 {
-  "name": "sit725_2024_t1_prac6",
+  "name": "sit725_2024_t1_prac7",
   "version": "1.0.0",
-  "description": "Using Databases",
+  "description": "Using Sockets",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,20 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac6.git"
+    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac7.git"
   },
   "author": "VK4041",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VK4041/SIT725_2024_T1_prac6/issues"
+    "url": "https://github.com/VK4041/SIT725_2024_T1_prac7/issues"
   },
-  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac6#readme",
+  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac7#readme",
   "dependencies": {
     "chai": "^5.1.0",
     "express": "^4.19.2",
     "fix-esm": "^1.0.1",
     "mocha": "^10.4.0",
     "mongodb": "^6.5.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "socket.io": "^4.7.5"
   }
 }
