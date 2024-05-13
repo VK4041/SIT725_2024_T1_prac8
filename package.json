@@ -1,7 +1,7 @@
 {
-  "name": "sit725_2024_t1_prac7",
+  "name": "sit725_2024_t1_prac8",
   "version": "1.0.0",
-  "description": "Using Sockets",
+  "description": "Dockerisation",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac7.git"
+    "url": "git+https://github.com/VK4041/SIT725_2024_T1_prac8.git"
   },
   "author": "VK4041",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VK4041/SIT725_2024_T1_prac7/issues"
+    "url": "https://github.com/VK4041/SIT725_2024_T1_prac8/issues"
   },
-  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac7#readme",
+  "homepage": "https://github.com/VK4041/SIT725_2024_T1_prac8#readme",
   "dependencies": {
     "chai": "^5.1.0",
     "express": "^4.19.2",
